@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNHS CSS NCII - TESDA Certificate Submission</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 3D Floating Badge -->
+        <div class="school-badge">
+            <div class="badge-inner">
+                <span class="badge-year">2026</span>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="logo-3d">
+                <div class="logo-container">
+                    <div class="graduation-cap">
+                        <div class="cap-top"></div>
+                        <div class="cap-bottom"></div>
+                        <div class="cap-tassel"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title-3d">KNHS CSS NCII</h1>
+            <p class="subtitle">TESDA Certificate Submission Portal</p>
+            
+            <div class="school-info">
+                <h2 class="school-name">KAUSWAGAN NATIONAL HIGH SCHOOL</h2>
+                <p class="location">Kauswagan, Cagayan de Oro</p>
+            </div>
+        </header>
+
+        <main class="form-container">
+            <div class="form-card-3d">
+                <div class="card-glow"></div>
+                <div class="form-header-3d">
+                    <div class="header-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h2>Certificate Submission Form</h2>
+                    <p>Please fill out the form below and attach a picture of your TESDA NC II Certificate</p>
+                    <div class="program-by">
+                        <span>Program by: <strong>Keith Dandan</strong> - ICT 12 Magsaysay</span>
+                    </div>
+                </div>
+
+                <form id="certificateForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="fullName">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Email Address <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                            </svg>
+                            Course/Program <span class="required">*</span>
+                        </label>
+                        <select id="course" name="course" required>
+                            <option value="">Select your course</option>
+                            <option value="CSS NCII">CSS NC II - Computer Systems Servicing</option>
+                            <option value="Bread and Pastry Production NCII">Bread and Pastry Production NC II</option>
+                            <option value="Cookery NCII">Cookery NC II</option>
+                            <option value="Food and Beverage Services NCII">Food and Beverage Services NC II</option>
+                            <option value="Housekeeping NCII">Housekeeping NC II</option>
+                            <option value="Other">Other TESDA Course</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="certificateDate">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            Date of Completion
+                        </label>
+                        <input type="date" id="certificateDate" name="certificateDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="certificate">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                            Certificate Picture <span class="required">*</span>
+                        </label>
+                        <div class="file-upload-wrapper">
+                            <div class="file-upload-area" id="dropZone">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                <p>Click to upload or drag and drop</p>
+                                <span class="file-types">PNG, JPG, JPEG (Max 10MB)</span>
+                            </div>
+                            <input type="file" id="certificate" name="certificate" accept="image/*" required>
+                            <div class="file-preview" id="filePreview">
+                                <img id="previewImage" src="" alt="Preview">
+                                <div class="file-info">
+                                    <span id="fileName"></span>
+                                    <button type="button" class="remove-file" id="removeFile">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            Additional Message
+                        </label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any additional information..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                        Submit via Gmail
+                    </button>
+                </form>
+
+                <div class="info-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    <p>Your certificate will be sent directly to our Gmail with the attachment automatically included!</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 KNHS CSS NCII. All rights reserved.</p>
+            <p>Kauswagan National High School - Computer Systems Servicing NC II</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
